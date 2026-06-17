@@ -420,10 +420,10 @@
           <img width=90% src="static/images/fig1_.png" alt="Control Performances under 6 Constrained Scenarios." loading="lazy"/>
           <!-- TODO: Replace with description of this result -->
           <p>
-            Tracking performances under 6 constrained scenarios. <b>a</b> lists constrained settings. <b>b</b>-<b>g</b> correspond to the states and control inputs of <i>Scen. 1)</i>-<i>Scen. 6)</i>, respectively.
+            Tracking performances under 6 constrained scenarios. <b>a</b> lists constrained settings. <b>b</b>-<b>g</b> correspond to the states and control inputs of <i>Scen.</i> 1)-<i>Scen.</i> 6), respectively.
           </p>
           <h2 class="subtitle has-text-left">
-            <br>The proposed TSST-based control protocol ensures the convergence of tracking error within a prescribed time, and the system can only track the desired trajectory when \(T_f>T_{f\min}\) is satisfied. 
+            <br>The proposed TSST-based control protocol ensures the convergence of tracking error within a prescribed time, and <b>the system can only track the desired trajectory when \(T_f>T_{f\min}\) is satisfied.</b> 
             The range of prescribed time \(T_{f\min}\) is innovatively derived from geometric analysis under multiple constraints, which is closely correlated to full-state constraints, input saturation, and unknown uncertainties. 
           </h2>
          </center>
@@ -442,7 +442,7 @@
           <h2 class="subtitle has-text-left">
             <br>In accordance with the form of the employed time-varying function, for a given time instant, as the regulated factor \(p\) increases, the value of \(\mu(t)\) decreases. Then, the control input magnitudes of the proposed TSST-based controller are attenuated. 
             The effect of regulated factor \(p\) of the time-varying function \(\mu(t)=1/(T_f-t)^p\) on the convergence rate and the control input magnitude is consistent with the conclusion in our previous work <a href="https://ieeexplore.ieee.org/document/10818981">Zhao et al. (2025)</a>. 
-            This indicates that the TSST-based solution in the infinite \(s\)-domain is identical to the original system's solution on a given finite \(t\)-domain. An appropriately reduced control input magnitude diminishes the switching frequency of control direction, thereby allowing the convergence of tracking errors more rapidly.
+            This indicates that <b>the TSST-based solution in the infinite \(s\)-domain is identical to the original system's solution on a given finite \(t\)-domain.</b> An appropriately reduced control input magnitude diminishes the switching frequency of control direction, thereby allowing the convergence of tracking errors more rapidly.
           </h2>
          </center>
       </div>
@@ -459,8 +459,33 @@
           </p>
           <h2 class="subtitle has-text-left">
             <br>Unlike existing methods, the proposed TSST-based control protocol uniformly maps the constrained system in the \(t\)-domain to an unconstrained one in the \(s\)-domain. 
-            Moreover, the derived range of prescribed time balances the relationship among the three factors. Together, they offer stronger adaptability and practical compliance.
+            Moreover, <b>the derived range of prescribed time balances the relationship among the three factors.</b> Together, they offer stronger adaptability and practical compliance.
           </h2>
+         </center>
+      </div>
+
+      <h2 class="title is-3"><center><br>Flight Tests</center></h2>
+       <div class="hero-body">
+         <center>
+          <!-- TODO: Replace with your research result images -->
+          <img width=80% src="static/images/validation1.png" alt="Control diagram of the proposed TSST-based control protocol." loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <p>
+            Quadrotor-based flight test validation. A quadrotor equipped with an IMU, an autopilot, and an onboard computer is employed for trajectory tracking. The onboard computer is a Jetson Orin NX laptop and the autopilot is a CUAV V5+, which are responsible for high-level control algorithm computation and low-level flight execution, respectively. 
+            A motion capture system is utilized to provide the position of quadrotor. The flight test process follows a three-stage workflow: takeoff, offboard-mode trajectory tracking, and landing. 
+            Specifically, in the offboard mode, the proposed TSST-based controller runs on the onboard computer, computes control commands, and transmits them to the autopilot. 
+          </p>
+         </center>
+      </div>
+       <div class="hero-body">
+         <center>
+          <!-- TODO: Replace with your research result images -->
+          <img width=90% src="static/images/flighttest.png" alt="Control diagram of the proposed TSST-based control protocol." loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <p>
+            Tracking performances of the quadrotor in three constrained flight tests with four trials per test. The constraints in <i>FT.</i> 1) and <i>FT.</i> 3) are set as \(L_{x,1}=H_{x,1}=\infty\), \(L_{y,1}=6\), \(H_{y,1}=-1\), \(L_{x,2}=H_{x,2}=L_{y,2}=H_{y,2}=1\), and \(L_{x,3}=H_{x,3}=L_{y,3}=H_{y,3}=20\), while the eased constraints in <i>FT.</i> 2) are \(L_{x,1}=H_{x,1}=\infty\), \(L_{y,1}=6.5\), \(H_{y,1}=-0.5\), \(L_{x,2}=H_{x,2}=L_{y,2}=H_{y,2}=1.8\), and \(L_{x,3}=H_{x,3}=L_{y,3}=H_{y,3}=25\). 
+            According to the range of prescribed time, the prescribed times of <i>FT.</i> 2) and <i>FT.</i> 3) should satisfy \(T_f\geq T_{f\min}=13.45{\rm s}\) and \(T_f\geq T_{f\min}=44.40{\rm s}\), respectively. For the sake of comparison, the prescribed times of <i>FT.</i> 1), <i>FT.</i> 2), and <i>FT.</i> 3) are set as \(45{\rm s}\), \(14{\rm s}\), and \(45{\rm s}\), respectively.
+          </p>
          </center>
       </div>
   </div>
