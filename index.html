@@ -209,31 +209,31 @@
       </div>
       <div class="works-list">
         <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="https://ieeexplore.ieee.org/document/10510185" class="work-item" target="_blank">
           <div class="work-info">
             <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
+            <h5>Cooperative Tracking of Fixed-Wing UAVs With Arbitrary Convergence Time: Theory and Experiment</h5>
             <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
+            <p>In this study, we propose a new consensus protocol for multi-UAVs using nonlinear mapping, which allows for advanced regulation of settling time and limits the trajectory within a desired performance range. The proposed method has a more than 70% improvement in the convergence rate, and the maximum control magnitude to converge high-order MASs reduces by 90% compared to existing methods.</p>
             <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <span class="work-venue">IEEE Transactions on Industrial Informatics / 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
         <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <a href="https://ieeexplore.ieee.org/document/10691919" class="work-item" target="_blank">
           <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>Cooperative Moving Target Fencing Control for Two-Layer UAVs With Relative Measurements</h5>
+            <p>This paper investigates a two-layer distributed control protocol for multiple unmanned aerial vehicles (UAVs) to fence a moving target cooperatively, using relative measurements. The relative spacing within the formation does not need to be given in advance, and the rotation and scaling of the formation can be quickly adjusted according to the design parameters. </p>
+            <span class="work-venue">IEEE Transactions on Automation Science and Engineering / 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        <a href="https://ieeexplore.ieee.org/document/10534850" class="work-item" target="_blank">
           <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>Exponential Predefined Time Trajectory Tracking Control for Fixed-Wing UAV With Input Saturation</h5>
+            <p>This article proposes a spatio-temporal trajectory tracking protocol for a fixed-wing unmanned aerial vehicle (UAV) subject to unknown disturbances and input saturation, using the exponential predefined time control (EPTC). An exponential controller is introduced to compensate for the predefined time controller to address the problem that the control magnitude may grow violently while approaching the predefined time.</p>
+            <span class="work-venue">IEEE Transactions on Aerospace and Electronic Systems / 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
@@ -356,12 +356,12 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            In this paper, a time-scaling state transformation (TSST) is proposed to address the state constraints, input saturation, uncertainties, and stringent settling time requirements simultaneously. 
-            The TSST embeds the constraints satisfaction into the algebraic problem of state-space transformation, thereby converting the constrained system from the \(t\)-domain into an equivalent unconstrained one in the \(s\)-domain. 
-            Firstly, the structure of TSST is developed to operate on both state and time, which enables flexibly handling various scenarios with combination of state constraints and guarantee convergence within a prescribed time. 
-            Then, the range of prescribed time is derived based on geometric analysis to balance the feasibility of proposed TSST-based control protocol and multiple constraints. 
-            Finally, numerical simulations and flight tests on a quadrotor are conducted to validate the performance of the proposed TSST-based control protocol and demonstrate the rationality of prescribed time selection. 
-            The flight test results illustrate that the quadrotor achieves spatio-temporal convergence subject to full-state constraints, input saturation, and external uncertainties, which further underscores the consistence between theory and experiment.
+            In this paper, a time-scaling state transformation (TSST) is proposed to address the coupled challenges of state constraints, input saturation, uncertainties, and stringent settling time requirements in robotic tasks. 
+            At its core, the TSST embeds constraint satisfaction into the algebraic problem of state-space transformation, thereby converting the constrained system from the \(t\)-domain into an equivalent unconstrained one in the \(s\)-domain. 
+            Built upon this transformation, a TSST-based control protocol is developed for robotic systems, which accommodates diverse constraint scenarios and guarantees convergence within a prescribed time. 
+            Furthermore, the range of prescribed settling time is rigorously derived via geometric analysis to ensure the feasibility of proposed TSST-based control protocol under multiple constraints. 
+            Finally, comprehensive comparative simulations validate the rationality of derived prescribed time and emphasize the strengths of proposed protocol in handling spatial and temporal constraints in a unified scheme. 
+            The flight test results illustrate that the quadrotor achieves spatio-temporal convergence under full-state constraints, input saturation, and external uncertainties, which further underscores the consistence between theory and experiment.
           </p>
         </div>
       </div>
@@ -382,7 +382,7 @@
           <img width=80% src="static/images/control_framework.png" alt="Control diagram of the proposed TSST-based control protocol." loading="lazy"/>
           <!-- TODO: Replace with description of this result -->
           <p>
-            A TSST-based controller is proposed for cascaded systems to achieve spatio-temporal convergence. The controller is designed in the \(s\)-domain by global Lyapunov functions, where the constrained system in the \(t\)-domain is mapped to an unconstrained one in the \(s\)-domain by the TSST. 
+            A TSST-based controller is proposed for robotic systems to achieve spatio-temporal convergence. The controller is designed in the \(s\)-domain by global Lyapunov functions, where the constrained system in the \(t\)-domain is mapped to an unconstrained one in the \(s\)-domain by the TSST. 
             The range of prescribed time is imposed by multiple spatial constraints, which provides a priori guarantee for the feasible design of TSST-based controllers, thereby ensuring the reliable execution of spatio-temporal tracking tasks under complex constraints.
           </p>
          </center>
